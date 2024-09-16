@@ -42,14 +42,14 @@ int main()
         cin >> i >> j;
         if (turn == false)
             game[i][j] = 'X';
-        10 Modern Code Review Exercise CS5351 2024 / 2025 else game[i][j] = 'O';
+        else game[i][j] = 'O';
         if (isWin(game))
         {
             cout << "Win!" << endl;
             break; // need to terminate the problem
         }
     }
-    if (i==3) // all celles with i=0 to 2 have been inputted above but no winner yet
+    if (n==9) // all celles with i=0 to 2 have been inputted above but no winner yet
         cout << "Tie!" << endl;
     // show the game to console
     cout << game[0][0] << " " << game[0][1] << " " << game[0][2] << endl;
